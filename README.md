@@ -23,33 +23,62 @@ Report: your zip file can include a pdf file, named Group_ID-report.pdf. Report 
 Canvas Submission
 For submission via Canvas, the submission file should be a zip file with the following structure:
 GROUP_ID/
+
 ├── run_llama.py
+
 ├── base_llama.py
+
 ├── llama.py
+
 ├── rope.py
+
 ├── classifier.py
+
 ├── config.py
+
 ├── optimizer.py
+
 ├── sanity_check.py
+
 ├── tokenizer.py
+
 ├── utils.py
+
 ├── README.md
+
 ├── structure.md
+
 ├── sanity_check.data
+
 ├── generated-sentence-temp-0.txt
+
 ├── generated-sentence-temp-1.txt
+
 ├── [OPTIONAL] sst-dev-advanced-output.txt
+
 ├── [OPTIONAL] sst-test-advanced-output.txt
+
 ├── sst-dev-prompting-output.txt
+
 ├── sst-test-prompting-output.txt
+
 ├── sst-dev-finetuning-output.txt
+
 ├── sst-test-finetuning-output.txt
+
 ├── [OPTIONAL] cfimdb-dev-advanced-output.txt
+
 ├── [OPTIONAL] cfimdb-test-advanced-output.txt
+
 ├── cfimdb-dev-prompting-output.txt
+
 ├── cfimdb-test-prompting-output.txt
+
 ├── cfimdb-dev-finetuning-output.txt
+
 ├── cfimdb-test-finetuning-output.txt
+
 ├── Group_ID-report.pdf
+
 └── setup.sh
 
