@@ -15,4 +15,4 @@ Once you have implemented these components, you will test our your model in 3 se
 2.	Perform zero-shot, prompt-based sentiment analysis on two datasets (SST-5 and CFIMDB). This will give bad results (roughly equal to choosing a random target class).
 3.	Perform task-specific finetuning of your Llama2 model, after implementing a classification head in classifier.py. This will give much stronger classification results.
 
-More detail in file ASM (ASSIGNMENT 1 DEVELOPMENT MINIMALIST OF THE LLAMA2 MODEL.pdf)
+More detail in file pdf ASM
