@@ -22,8 +22,11 @@ More detail in file pdf ASM
 Report: your zip file can include a pdf file, named Group_ID-report.pdf. Report can present implement the requirements, accuracy, best results are with some hyperparameters other than the default, how running your code... no more than 3 pages in 2 weeks.
 Canvas Submission
 For submission via Canvas, the submission file should be a zip file with the following structure:
+
 GROUP_ID/
+
 ├── run_llama.py
+
 ├── base_llama.py
 
 ├── llama.py
