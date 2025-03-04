@@ -23,9 +23,7 @@ Report: your zip file can include a pdf file, named Group_ID-report.pdf. Report 
 Canvas Submission
 For submission via Canvas, the submission file should be a zip file with the following structure:
 GROUP_ID/
-
 ├── run_llama.py
-
 ├── base_llama.py
 
 ├── llama.py
