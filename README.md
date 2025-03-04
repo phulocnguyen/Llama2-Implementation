@@ -16,3 +16,40 @@ Once you have implemented these components, you will test our your model in 3 se
 3.	Perform task-specific finetuning of your Llama2 model, after implementing a classification head in classifier.py. This will give much stronger classification results.
 
 More detail in file pdf ASM
+
+#Submission
+
+Report: your zip file can include a pdf file, named Group_ID-report.pdf. Report can present implement the requirements, accuracy, best results are with some hyperparameters other than the default, how running your code... no more than 3 pages in 2 weeks.
+Canvas Submission
+For submission via Canvas, the submission file should be a zip file with the following structure:
+GROUP_ID/
+├── run_llama.py
+├── base_llama.py
+├── llama.py
+├── rope.py
+├── classifier.py
+├── config.py
+├── optimizer.py
+├── sanity_check.py
+├── tokenizer.py
+├── utils.py
+├── README.md
+├── structure.md
+├── sanity_check.data
+├── generated-sentence-temp-0.txt
+├── generated-sentence-temp-1.txt
+├── [OPTIONAL] sst-dev-advanced-output.txt
+├── [OPTIONAL] sst-test-advanced-output.txt
+├── sst-dev-prompting-output.txt
+├── sst-test-prompting-output.txt
+├── sst-dev-finetuning-output.txt
+├── sst-test-finetuning-output.txt
+├── [OPTIONAL] cfimdb-dev-advanced-output.txt
+├── [OPTIONAL] cfimdb-test-advanced-output.txt
+├── cfimdb-dev-prompting-output.txt
+├── cfimdb-test-prompting-output.txt
+├── cfimdb-dev-finetuning-output.txt
+├── cfimdb-test-finetuning-output.txt
+├── Group_ID-report.pdf
+└── setup.sh
+
