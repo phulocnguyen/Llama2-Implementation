@@ -30,6 +30,7 @@ class RMSNorm(torch.nn.Module):
         self.eps = eps
         self.weight = nn.Parameter(torch.ones(dim))
 
+
     def _norm(self, x):
         """
         Compute the root mean square normalization. Use Equation 4 under
@@ -43,8 +44,9 @@ class RMSNorm(torch.nn.Module):
         Returns:
             torch.Tensor: The normalized tensor.
         """
-        # todo
-        raise NotImplementedError
+        rms = torch.sqrt(torch.mean(x ** 2, dim=-1, keepdim=True) + self.eps)
+        normalized_x = (x / rms) * self.weight
+        return normalized_x
 
     def forward(self, x):
         """
