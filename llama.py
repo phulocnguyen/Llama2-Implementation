@@ -96,8 +96,8 @@ class Attention(nn.Module):
         attention matrix before applying it to the value tensor.
         '''
         scores = torch.matmul(query,key.transpose(-2,-1)) / math.sqrt(self.head_dim)
-        scores = F.softmax(scores,dim=-1)
-        context = torch.matmul(scores.float(),value).type_as(query)
+        scores = F.softmax(scores,dim=-1).type_as(query)
+        context = torch.matmul(scores.float(),value)
         return context
     def forward(
         self,
