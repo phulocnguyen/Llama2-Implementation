@@ -199,8 +199,13 @@ class LlamaLayer(nn.Module):
         5) add a residual connection from the unnormalized self-attention output to the
            output of the feed-forward network
         '''
-        # todo
-        raise NotImplementedError
+        norm_x = self.attention_norm(x)
+        attn_output = self.attention(norm_x)
+        x = x + attn_output
+        norm_x = self.ffn_norm(x)
+        ffn_output = self.feed_forward(norm_x)
+        x = x + ffn_output
+        return x
 
 class Llama(LlamaPreTrainedModel):
     def __init__(self, config: LlamaConfig):
